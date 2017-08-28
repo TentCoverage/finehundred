@@ -1,0 +1,16 @@
+package me.TentCoverage.Tutorial1.Commands;
+
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+public class awesome implements CommandExecutor {
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		Player player = (Player) sender;
+		player.hasPlayedBefore(); {
+			player.sendMessage("Hello if you would like to know how to play MC please click this link. And no, it's not a virus :D: http://bit.ly/2g2CKTS");}
+		return false;}}
